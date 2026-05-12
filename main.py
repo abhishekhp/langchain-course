@@ -1,38 +1,46 @@
-import os
+from typing import List
 
+from pydantic import BaseModel, Field
 from dotenv import load_dotenv
-from langchain_core.prompts import PromptTemplate
-from langchain_openai import ChatOpenAI
 
 load_dotenv()
+from langchain.agents import create_agent
+from langchain.tools import tool
+from langchain_core.messages import HumanMessage
+from langchain_openai import ChatOpenAI
+from langchain_tavily import TavilySearch
+
+
+class Source(BaseModel):
+    """Schema for a source used by the agent"""
+
+    url: str = Field(description="The URL of the source")
+
+
+class AgentResponse(BaseModel):
+    """Schema for agent response with answer and sources"""
+
+    answer: str = Field(description="Thr agent's answer to the query")
+    sources: List[Source] = Field(
+        default_factory=list, description="List of sources used to generate the answer"
+    )
+
+
+llm = ChatOpenAI(model="gpt-5")
+tools = [TavilySearch()]
+agent = create_agent(model=llm, tools=tools, response_format=AgentResponse)
 
 
 def main():
     print("Hello from langchain-course!")
-    print(os.environ.get("OPENAI_API_KEY"))
-    information = """
-    Elon Reeve Musk (/ˈiːlɒn/ EE-lon; born June 28, 1971) is a businessman and entrepreneur known for his leadership of Tesla, SpaceX, X, and xAI. Musk has been the wealthiest person in the world since 2025; as of April 2026, Forbes estimates his net worth to be US$809 billion.
-
-Born into the wealthy Musk family in Pretoria, South Africa, Musk emigrated in 1989 to Canada; he has Canadian citizenship since his mother was born there. He received bachelor's degrees in 1997 from the University of Pennsylvania before moving to California to pursue business ventures. In 1995, Musk co-founded the software company Zip2. Following its sale in 1999, he co-founded X.com, an online payment company that later merged to form PayPal, which was acquired by eBay in 2002. Musk also became an American citizen in 2002.
-
-    """
-
-    summary_template = f"""
-    given the information {information} about a person I want you to create:
-    1. A short summary
-    2. two interesting facts about them
-    """
-
-    summary_prompt_template = PromptTemplate(
-        input_variables=["information"], template=summary_template
+    result = agent.invoke(
+        {
+            "messages": HumanMessage(
+                content="search for 3 job postings for an ai engineer using langchain in the bay area on linkedin and list their details?"
+            )
+        }
     )
-
-    llm = ChatOpenAI(temperature=0, model="gpt-5")
-    chain = summary_prompt_template | llm
-
-    response = chain.invoke(input={"information": information})
-    print(response.content)
-
+    print(result)
 
 
 if __name__ == "__main__":
