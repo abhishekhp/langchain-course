@@ -105,11 +105,20 @@ if __name__ == "__main__":
     query = "what is Pinecone in machine learning?"
 
     # ========================================================================
-    # Option 1: Use implementation WITHOUT LCEL
+    # Option 2: Use implementation WITH LCEL (Better Approach)
     # ========================================================================
     print("\n" + "=" * 70)
-    print("IMPLEMENTATION 1: Without LCEL")
+    print("IMPLEMENTATION 2: With LCEL - Better Approach")
     print("=" * 70)
-    result_without_lcel = retrieval_chain_without_lcel(query)
+    print("Why LCEL is better:")
+    print("- More concise and declarative")
+    print("- Built-in streaming: chain.stream()")
+    print("- Built-in async: chain.ainvoke()")
+    print("- Easy to compose with other chains")
+    print("- Better for production use")
+    print("=" * 70)
+
+    chain_with_lcel = create_retrieval_chain_with_lcel()
+    result_with_lcel = chain_with_lcel.invoke({"question": query})
     print("\nAnswer:")
-    print(result_without_lcel)
+    print(result_with_lcel)
