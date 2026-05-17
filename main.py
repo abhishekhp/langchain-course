@@ -105,11 +105,11 @@ if __name__ == "__main__":
     query = "what is Pinecone in machine learning?"
 
     # ========================================================================
-    # Option 0: Raw invocation without RAG
+    # Option 1: Use implementation WITHOUT LCEL
     # ========================================================================
     print("\n" + "=" * 70)
-    print("IMPLEMENTATION 0: Raw LLM Invocation (No RAG)")
+    print("IMPLEMENTATION 1: Without LCEL")
     print("=" * 70)
-    result_raw = llm.invoke([HumanMessage(content=query)])
+    result_without_lcel = retrieval_chain_without_lcel(query)
     print("\nAnswer:")
-    print(result_raw.content)
+    print(result_without_lcel)
