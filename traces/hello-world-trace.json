@@ -1,0 +1,75 @@
+{
+  "inputs": {
+    "information": "\n    Elon Reeve Musk (/ˈiːlɒn/ EE-lon; born June 28, 1971) is a businessman and entrepreneur known for his leadership of Tesla, SpaceX, X, and xAI. Musk has been the wealthiest person in the world since 2025; as of April 2026, Forbes estimates his net worth to be US$809 billion.\n\nBorn into the wealthy Musk family in Pretoria, South Africa, Musk emigrated in 1989 to Canada; he has Canadian citizenship since his mother was born there. He received bachelor's degrees in 1997 from the University of Pennsylvania before moving to California to pursue business ventures. In 1995, Musk co-founded the software company Zip2. Following its sale in 1999, he co-founded X.com, an online payment company that later merged to form PayPal, which was acquired by eBay in 2002. Musk also became an American citizen in 2002.\n\n    "
+  },
+  "outputs": {
+    "output": {
+      "additional_kwargs": {
+        "refusal": null
+      },
+      "content": "Short summary:\nElon Reeve Musk (born June 28, 1971) is a South African–born entrepreneur who leads Tesla, SpaceX, X, and xAI. After earning bachelor’s degrees from the University of Pennsylvania, he co-founded Zip2 and later X.com (which became PayPal) before becoming a U.S. citizen in 2002.\n\nTwo interesting facts:\n- As of April 2026, Forbes estimates his net worth at US$809 billion, and he has been the world’s wealthiest person since 2025.\n- He holds three nationalities: South African by birth, Canadian through his mother (and emigration in 1989), and American since 2002.",
+      "id": "lc_run--019e02cc-d9b2-7fe3-8f7f-bfcd2621a501-0",
+      "invalid_tool_calls": [],
+      "response_metadata": {
+        "finish_reason": "stop",
+        "id": "chatcmpl-DctpRvNVHrCGKwCcod86ae4aNR0fc",
+        "logprobs": null,
+        "model_name": "gpt-5-2025-08-07",
+        "model_provider": "openai",
+        "service_tier": "default",
+        "system_fingerprint": null,
+        "token_usage": {
+          "completion_tokens": 1563,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 1408,
+            "rejected_prediction_tokens": 0
+          },
+          "prompt_tokens": 242,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          },
+          "total_tokens": 1805
+        }
+      },
+      "tool_calls": [],
+      "type": "ai",
+      "usage_metadata": {
+        "input_token_details": {
+          "audio": 0,
+          "cache_read": 0
+        },
+        "input_tokens": 242,
+        "output_token_details": {
+          "audio": 0,
+          "reasoning": 1408
+        },
+        "output_tokens": 1563,
+        "total_tokens": 1805
+      }
+    }
+  },
+  "metadata": {
+    "LANGSMITH_ENDPOINT": "https://api.smith.langchain.com",
+    "LANGSMITH_PROJECT": "hello-world",
+    "LANGSMITH_TRACING": "true",
+    "ls_run_depth": 0,
+    "revision_id": "02a87aa-dirty"
+  },
+  "langsmith": {
+    "organization": {
+      "name": "Personal",
+      "id": "66cfc4d6-b28d-4699-96a4-1f669aba8567"
+    },
+    "workspace": {
+      "name": "Workspace 1",
+      "id": "2cf79cd4-2f7a-4889-8ae2-c902a2fbe8cc"
+    },
+    "tracing_project": {
+      "id": "c96798f1-a142-4f88-94e5-401fcb930baf",
+      "name": "hello-world"
+    }
+  }
+}

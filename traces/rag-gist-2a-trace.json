@@ -1,0 +1,140 @@
+{
+  "inputs": {
+    "messages": [
+      [
+        {
+          "id": [
+            "langchain",
+            "schema",
+            "messages",
+            "HumanMessage"
+          ],
+          "kwargs": {
+            "content": "Answer the question based only on the following context:\n\nPinecone is designed to be fast and scalable, allowing for efficient retrieval of similar data points based on their vector representations.\nIt can handle large-scale ML applications with millions or billions of data points.\nPinecone provides infrastructure management or maintenance to its users.\nPinecone can handle high query throughput and low latency search.\nPinecone is a secure platform that meets the security needs of businesses and organizations.\nPinecone is designed to be user-friendly and accessible via its simple API for storing and retrieving vector data, making it easy to integrate into existing ML workflows.\nPinecone supports real-time updates, allowing for efficient updates to the vector database as new data points are added. This ensures that the vector database remains up-to-date and accurate over time.\nPinecone can be synced with data from various sources using tools like Airbyte and monitored using Datadog\nChroma DB\nChroma DB is an open-source vector store for storing and retrieving vector embeddings. It is mainly used to save embeddings along with metadata to be used later by LLMs and can also be used for semantic search engines over text data.\n\nWeaviate can store and search vectors from various data modalities, including images, text, and audio.\nWeaviate provides seamless integration with machine learning frameworks such as Hugging Face, Open AI, LangChain, Llamaindex, TensorFlow, PyTorch, and Scikit-learn.\nWeaviate can index vectors in real-time, making it ideal for applications that require low-latency search.\nWeaviate can be scaled to handle large volumes of data and high query throughput.\nWeaviate can be used in memory for fast search or with disk-based storage for larger datasets.\nWeaviate provides a user-friendly interface for managing vectors and performing searches.\nPinecone\nPinecone is a fully managed cloud-based vector database that is designed to make it easy for businesses and organizations to build and deploy large-scale ML applications.\n\n\nSome Pinecone Features:\n\nChatGPT prompts\n47 stories\n·\n1439 saves\nSparse embedding or BM25?\nInfiniFlow\nInfiniFlow\n\nSparse embedding or BM25?\nSince the open-sourcing of Infinity, it has received a wide positive response from the community. Regarding the essential RAG technology we…\n7 min read\n·\nFeb 13, 2024\n16\n\nExperimenting with Vector Databases: Chromadb, Pinecone, Weaviate and Pgvector\nVishnu Sivan\nVishnu Sivan\n\nin\n\nCoinsBench\n\nExperimenting with Vector Databases: Chromadb, Pinecone, Weaviate and Pgvector\nVector databases are specialized systems designed for storing, managing, and searching embedding vectors. The widespread adoption of…\n10 min read\n·\nNov 14, 2023\n164\n\n1\n\n🚀 Blazing Fast Text Embeddings Inference for your RAG\nDavid Min\nDavid Min\n\n🚀 Blazing Fast Text Embeddings Inference for your RAG\nHugging Face — Text Embeddings Inference (TEI)\n6 min read\n·\nOct 21, 2023\n94\n\n2\n\nVector Database — Introduction and Python Implementation\nDenaya\nDenaya\n\nQuestion: what is Pinecone in machine learning?\n\nProvide a detailed answer:",
+            "type": "human"
+          },
+          "lc": 1,
+          "type": "constructor"
+        }
+      ]
+    ]
+  },
+  "outputs": {
+    "generations": [
+      [
+        {
+          "generation_info": {
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "message": {
+            "id": [
+              "langchain",
+              "schema",
+              "messages",
+              "AIMessage"
+            ],
+            "kwargs": {
+              "additional_kwargs": {
+                "refusal": null
+              },
+              "content": "Pinecone is a fully managed cloud-based vector database designed for businesses and organizations to easily build and deploy large-scale ML applications. It is known for its fast and scalable nature, allowing for efficient retrieval of similar data points based on their vector representations. Pinecone can handle large-scale ML applications with millions or billions of data points, providing infrastructure management and maintenance to its users.\n\nIn addition, Pinecone is capable of handling high query throughput and low latency search, making it ideal for real-time applications. It is also a secure platform that meets the security needs of businesses and organizations. Pinecone is user-friendly and accessible through a simple API for storing and retrieving vector data, allowing for easy integration into existing ML workflows.\n\nOne key feature of Pinecone is its support for real-time updates, ensuring the vector database remains up-to-date and accurate over time as new data points are added. Pinecone can also be synced with data from various sources using tools like Airbyte and monitored using Datadog.\n\nOverall, Pinecone is a powerful tool in the machine learning landscape, offering a fully managed solution for storing and working with vector embeddings efficiently and securely.",
+              "id": "run--5ebe2d36-c4df-46ad-8b21-189045bc7d75-0",
+              "invalid_tool_calls": [],
+              "response_metadata": {
+                "finish_reason": "stop",
+                "id": "chatcmpl-DgWTjDmqgtPMcRII9IAuX26VyDNuZ",
+                "logprobs": null,
+                "model_name": "gpt-3.5-turbo-0125",
+                "service_tier": "default",
+                "system_fingerprint": null,
+                "token_usage": {
+                  "completion_tokens": 229,
+                  "completion_tokens_details": {
+                    "accepted_prediction_tokens": 0,
+                    "audio_tokens": 0,
+                    "reasoning_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                  },
+                  "prompt_tokens": 700,
+                  "prompt_tokens_details": {
+                    "audio_tokens": 0,
+                    "cached_tokens": 0
+                  },
+                  "total_tokens": 929
+                }
+              },
+              "tool_calls": [],
+              "type": "ai",
+              "usage_metadata": {
+                "input_token_details": {
+                  "audio": 0,
+                  "cache_read": 0
+                },
+                "input_tokens": 700,
+                "output_token_details": {
+                  "audio": 0,
+                  "reasoning": 0
+                },
+                "output_tokens": 229,
+                "total_tokens": 929
+              }
+            },
+            "lc": 1,
+            "type": "constructor"
+          },
+          "text": "Pinecone is a fully managed cloud-based vector database designed for businesses and organizations to easily build and deploy large-scale ML applications. It is known for its fast and scalable nature, allowing for efficient retrieval of similar data points based on their vector representations. Pinecone can handle large-scale ML applications with millions or billions of data points, providing infrastructure management and maintenance to its users.\n\nIn addition, Pinecone is capable of handling high query throughput and low latency search, making it ideal for real-time applications. It is also a secure platform that meets the security needs of businesses and organizations. Pinecone is user-friendly and accessible through a simple API for storing and retrieving vector data, allowing for easy integration into existing ML workflows.\n\nOne key feature of Pinecone is its support for real-time updates, ensuring the vector database remains up-to-date and accurate over time as new data points are added. Pinecone can also be synced with data from various sources using tools like Airbyte and monitored using Datadog.\n\nOverall, Pinecone is a powerful tool in the machine learning landscape, offering a fully managed solution for storing and working with vector embeddings efficiently and securely.",
+          "type": "ChatGeneration"
+        }
+      ]
+    ],
+    "llm_output": {
+      "id": "chatcmpl-DgWTjDmqgtPMcRII9IAuX26VyDNuZ",
+      "model_name": "gpt-3.5-turbo-0125",
+      "service_tier": "default",
+      "system_fingerprint": null,
+      "token_usage": {
+        "completion_tokens": 229,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 700,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 929
+      }
+    },
+    "run": null,
+    "type": "LLMResult"
+  },
+  "metadata": {
+    "LANGSMITH_ENDPOINT": "https://api.smith.langchain.com",
+    "LANGSMITH_PROJECT": "rag-gist-2",
+    "LANGSMITH_TRACING": "true",
+    "ls_model_name": "gpt-3.5-turbo",
+    "ls_model_type": "chat",
+    "ls_provider": "openai",
+    "ls_run_depth": 0,
+    "ls_temperature": null,
+    "revision_id": "5adcfee"
+  },
+  "langsmith": {
+    "organization": {
+      "name": "Personal",
+      "id": "66cfc4d6-b28d-4699-96a4-1f669aba8567"
+    },
+    "workspace": {
+      "name": "Workspace 1",
+      "id": "2cf79cd4-2f7a-4889-8ae2-c902a2fbe8cc"
+    },
+    "tracing_project": {
+      "id": "7df48268-e0fd-4a24-bc60-a6faf08fa2cd",
+      "name": "rag-gist-2"
+    }
+  }
+}

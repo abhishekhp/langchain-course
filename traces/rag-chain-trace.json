@@ -1,0 +1,90 @@
+{
+  "inputs": {
+    "messages": [
+      {
+        "content": "What is task decomposition?",
+        "role": "user"
+      }
+    ]
+  },
+  "outputs": {
+    "messages": [
+      {
+        "additional_kwargs": {},
+        "content": "What is task decomposition?",
+        "id": "1fcaf4b0-4123-4877-b4c9-1a1a76a50f78",
+        "response_metadata": {},
+        "type": "human"
+      },
+      {
+        "additional_kwargs": {
+          "refusal": null
+        },
+        "content": "Task decomposition is a technique where a complex task is broken down into smaller and more manageable steps. This approach allows agents or models to tackle difficult problems by dividing them into simpler subtasks. It can involve strategies like Chain of Thought or Tree of Thoughts to guide the decomposition process effectively.",
+        "id": "lc_run--019e3804-f3eb-7572-9fd7-e8c301210878-0",
+        "invalid_tool_calls": [],
+        "response_metadata": {
+          "finish_reason": "stop",
+          "id": "chatcmpl-Dge6YOV1Xnrff1VVh9HeD1MEVrOgy",
+          "logprobs": null,
+          "model_name": "gpt-3.5-turbo-0125",
+          "model_provider": "openai",
+          "service_tier": "default",
+          "system_fingerprint": null,
+          "token_usage": {
+            "completion_tokens": 56,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "prompt_tokens": 812,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 868
+          }
+        },
+        "tool_calls": [],
+        "type": "ai",
+        "usage_metadata": {
+          "input_token_details": {
+            "audio": 0,
+            "cache_read": 0
+          },
+          "input_tokens": 812,
+          "output_token_details": {
+            "audio": 0,
+            "reasoning": 0
+          },
+          "output_tokens": 56,
+          "total_tokens": 868
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "LANGSMITH_ENDPOINT": "https://api.smith.langchain.com",
+    "LANGSMITH_PROJECT": "rag-chain-example",
+    "LANGSMITH_TRACING": "true",
+    "ls_integration": "langchain_create_agent",
+    "ls_run_depth": 0,
+    "revision_id": "a61a7ff"
+  },
+  "langsmith": {
+    "organization": {
+      "name": "Personal",
+      "id": "66cfc4d6-b28d-4699-96a4-1f669aba8567"
+    },
+    "workspace": {
+      "name": "Workspace 1",
+      "id": "2cf79cd4-2f7a-4889-8ae2-c902a2fbe8cc"
+    },
+    "tracing_project": {
+      "id": "f5c230d8-85c6-48ca-ae9f-1c9f824df0da",
+      "name": "rag-chain-example"
+    }
+  }
+}

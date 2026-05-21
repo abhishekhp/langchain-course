@@ -1,0 +1,140 @@
+{
+  "inputs": {
+    "messages": [
+      [
+        {
+          "id": [
+            "langchain",
+            "schema",
+            "messages",
+            "HumanMessage"
+          ],
+          "kwargs": {
+            "content": "what is Pinecone in machine learning?",
+            "type": "human"
+          },
+          "lc": 1,
+          "type": "constructor"
+        }
+      ]
+    ]
+  },
+  "outputs": {
+    "generations": [
+      [
+        {
+          "generation_info": {
+            "finish_reason": "stop",
+            "logprobs": null
+          },
+          "message": {
+            "id": [
+              "langchain",
+              "schema",
+              "messages",
+              "AIMessage"
+            ],
+            "kwargs": {
+              "additional_kwargs": {
+                "refusal": null
+              },
+              "content": "In machine learning, a pinecone is an algorithm used for approximate nearest neighbor search. It is particularly useful in high-dimensional spaces where traditional exhaustive methods become computationally expensive. Pinecone is based on locality-sensitive hashing (LSH) and efficiently retrieves the nearest neighbors of a given query point by mapping high-dimensional data points into lower-dimensional representations. This allows for faster and more efficient search operations in large datasets.",
+              "id": "run--aafa93fd-32d1-4fc1-8f81-6cc7b6e8a5d6-0",
+              "invalid_tool_calls": [],
+              "response_metadata": {
+                "finish_reason": "stop",
+                "id": "chatcmpl-DgWQvui5Q8H1HgJg5g3CVcxwugUFQ",
+                "logprobs": null,
+                "model_name": "gpt-3.5-turbo-0125",
+                "service_tier": "default",
+                "system_fingerprint": null,
+                "token_usage": {
+                  "completion_tokens": 81,
+                  "completion_tokens_details": {
+                    "accepted_prediction_tokens": 0,
+                    "audio_tokens": 0,
+                    "reasoning_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                  },
+                  "prompt_tokens": 15,
+                  "prompt_tokens_details": {
+                    "audio_tokens": 0,
+                    "cached_tokens": 0
+                  },
+                  "total_tokens": 96
+                }
+              },
+              "tool_calls": [],
+              "type": "ai",
+              "usage_metadata": {
+                "input_token_details": {
+                  "audio": 0,
+                  "cache_read": 0
+                },
+                "input_tokens": 15,
+                "output_token_details": {
+                  "audio": 0,
+                  "reasoning": 0
+                },
+                "output_tokens": 81,
+                "total_tokens": 96
+              }
+            },
+            "lc": 1,
+            "type": "constructor"
+          },
+          "text": "In machine learning, a pinecone is an algorithm used for approximate nearest neighbor search. It is particularly useful in high-dimensional spaces where traditional exhaustive methods become computationally expensive. Pinecone is based on locality-sensitive hashing (LSH) and efficiently retrieves the nearest neighbors of a given query point by mapping high-dimensional data points into lower-dimensional representations. This allows for faster and more efficient search operations in large datasets.",
+          "type": "ChatGeneration"
+        }
+      ]
+    ],
+    "llm_output": {
+      "id": "chatcmpl-DgWQvui5Q8H1HgJg5g3CVcxwugUFQ",
+      "model_name": "gpt-3.5-turbo-0125",
+      "service_tier": "default",
+      "system_fingerprint": null,
+      "token_usage": {
+        "completion_tokens": 81,
+        "completion_tokens_details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        },
+        "prompt_tokens": 15,
+        "prompt_tokens_details": {
+          "audio_tokens": 0,
+          "cached_tokens": 0
+        },
+        "total_tokens": 96
+      }
+    },
+    "run": null,
+    "type": "LLMResult"
+  },
+  "metadata": {
+    "LANGSMITH_ENDPOINT": "https://api.smith.langchain.com",
+    "LANGSMITH_PROJECT": "rag-gist-1",
+    "LANGSMITH_TRACING": "true",
+    "ls_model_name": "gpt-3.5-turbo",
+    "ls_model_type": "chat",
+    "ls_provider": "openai",
+    "ls_run_depth": 0,
+    "ls_temperature": null,
+    "revision_id": "5adcfee"
+  },
+  "langsmith": {
+    "organization": {
+      "name": "Personal",
+      "id": "66cfc4d6-b28d-4699-96a4-1f669aba8567"
+    },
+    "workspace": {
+      "name": "Workspace 1",
+      "id": "2cf79cd4-2f7a-4889-8ae2-c902a2fbe8cc"
+    },
+    "tracing_project": {
+      "id": "987a9985-ee2d-4cdb-99eb-c6b45595f55c",
+      "name": "rag-gist-1"
+    }
+  }
+}
